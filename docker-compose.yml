@@ -4,8 +4,10 @@ services:
     build:
       context: '.'
       dockerfile: './build/Dockerfile'
+      args:
+        DockerHOME: "${DockerHOME}"
     image: "${ImageName}:latest"
-    container_name: "{ContainerName}"
+    container_name: "${ContainerName}"
     volumes:
       - "./${APP}/:${DockerHOME}"
     env_file:
