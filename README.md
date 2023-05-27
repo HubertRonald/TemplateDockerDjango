@@ -1,4 +1,5 @@
 [![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)](https://www.python.org/dev/peps/pep-0537/#schedule-first-bugfix-release)
+[![bash](https://img.shields.io/badge/Shell_Script-121011?style=flat-square&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com/)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
 ![GitHub last commit](https://img.shields.io/github/last-commit/hubertronald/TemplateDockerDjango?style=flat-square)
@@ -8,6 +9,12 @@
 La plantilla de Docker y Django solo busca ser una guia para configurar el `volume` que ofrece Docker entre los archivos locales y el contedor. Esto con el fin de ir visualizando el contenido que se va generando en la máquina anfitriona (**host**) en la app de Django.
 
 ![](./src/images/pantalla_bienvenida_django_en_contenedor.png)
+
+Si se estás en entorno MacOS o Linux se puede levantar el servicio corriendo el siguiente script de bash en la terminal
+
+```bash
+./quick_start.sh
+```
 
 ## Procedimiento
 
@@ -20,7 +27,7 @@ La plantilla de Docker y Django solo busca ser una guia para configurar el `volu
 2. Luego configura el entorno virtual
     ```bash
     python3 -m venv .venv                   # Instalar Entonorno Virtual
-    . .venv/bin/activate                    # Activar Entorno Virtual
+    source .venv/bin/activate                    # Activar Entorno Virtual
     python3 -m pip install --upgrade pip    # Actualizar el gestor de paquete pip
     pip install -r requirements.txt         # Instalar Bibliotecas de Python
     ```
