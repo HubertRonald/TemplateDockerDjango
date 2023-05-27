@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    build:
+      context: '.'
+      dockerfile: './build/Dockerfile'
+    image: "${ImageName}:latest"
+    container_name: "{ContainerName}"
+    volumes:
+      - "./${APP}/:${DockerHOME}"
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
