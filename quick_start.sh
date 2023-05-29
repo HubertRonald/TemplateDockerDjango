@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# autor: @hubertonal
+# autor: @hubertronald
 
 # Config Virtual Environment
 python3 -m venv .venv
@@ -9,6 +9,7 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 
 # Available environment variables
+# file .env has default environment variables
 source .env
 
 # Create App Django

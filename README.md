@@ -10,7 +10,7 @@ La plantilla de Docker y Django solo busca ser una guia para configurar el `volu
 
 ![](./src/images/pantalla_bienvenida_django_en_contenedor.png)
 
-Si se estás en entorno MacOS o Linux se puede levantar el servicio corriendo el siguiente script de bash en la terminal
+Si se está en entorno **MacOS** o **Linux**, se puede levantar el servicio corriendo el siguiente script de bash en la terminal, habiendo clonado primero el repositorio.
 
 ```bash
 ./quick_start.sh
