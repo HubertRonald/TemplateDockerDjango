@@ -16,6 +16,12 @@ Si se está en entorno **MacOS** o **Linux**, se puede levantar el servicio corr
 ./quick_start.sh
 ```
 
+Para para el servicio de docker (no eliminarlo)
+
+```bash
+./stop.sh
+```
+
 ## Procedimiento
 
 1. Clona el repo en local

@@ -15,6 +15,6 @@ source .env
 # Create App Django
 django-admin startproject $APP
 
-# Create and up detach Container
+# Create and up detach Service Container
 docker-compose build
 docker-compose up -d
