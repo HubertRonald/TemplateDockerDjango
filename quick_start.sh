@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 # Available environment variables
 # file .env has default environment variables
-source .env
+source $(pwd)/.env
 
 # Create App Django
 django-admin startproject $APP
